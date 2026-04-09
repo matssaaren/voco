@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Landing page for the Introduction to AWS workshop at VOCO Estonia."
+    />
     <title>AWS Intro Workshop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -21,7 +31,7 @@
     </header>
 
     <main>
-      <section class="hero" id="workshop">
+      <section class="hero reveal" id="workshop">
         <div class="container hero-grid">
           <div class="hero-copy">
             <p class="eyebrow">VOCO Estonia - Hands-on Lab</p>
@@ -44,7 +54,7 @@
         </div>
       </section>
 
-      <section class="agenda" id="agenda">
+      <section class="agenda reveal" id="agenda">
         <div class="container">
           <h2>Workshop Agenda</h2>
           <div class="card-grid">
@@ -64,13 +74,14 @@
         </div>
       </section>
 
-      <section class="location" id="location">
+      <section class="location reveal" id="location">
         <div class="container location-shell">
           <h2>Hosted at VOCO Estonia</h2>
           <p>
             This workshop is part of a practical learning session in Estonia focused
             on launching web projects in AWS.
           </p>
+          <a class="ghost-button" href="#workshop">Back to Workshop Intro</a>
         </div>
       </section>
     </main>
@@ -78,7 +89,7 @@
     <footer class="site-footer">
       <div class="container footer-shell">
         <p>AWS Intro Workshop</p>
-        <p>2026 learning session</p>
+        <p><span id="year"></span> learning session</p>
       </div>
     </footer>
 
